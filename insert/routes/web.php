@@ -17,3 +17,9 @@ Route::get('/show.contact','Mycontroller@contactshow');
 Route::get('/about','AboutController@about');
 Route::post('/store.about','AboutController@aboutestore')->name('store.about');
 Route::get('/show.about','AboutController@aboutshow');
+
+
+//Admin
+Route::get('/admin','admincontroller@adminform');
+Route::post('/store.admin','admincontroller@adminstore')->name('admin');
+Route::get('/show.about','admincontroller@aboutshow');
