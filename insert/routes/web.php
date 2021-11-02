@@ -22,4 +22,4 @@ Route::get('/show.about','AboutController@aboutshow');
 //Admin
 Route::get('/admin','admincontroller@adminform');
 Route::post('/store.admin','admincontroller@adminstore')->name('admin');
-Route::get('/show.about','admincontroller@aboutshow');
+Route::get('/show.admin','admincontroller@adminshow');

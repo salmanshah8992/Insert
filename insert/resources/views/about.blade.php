@@ -20,7 +20,7 @@
               @endif
 
         <h2>About Form</h2>
-        <a href="{{URL::to('/show.about')}}" class="btn btn-info" style="text-decoration: none;">About Show Page</a>
+        <a href="{{URL::to('show.about')}}" class="btn btn-info" style="text-decoration: none;">About Show Page</a>
         <a href="{{URL::to('/')}}" class="btn btn-info" style="text-decoration: none;">Contact Form Page</a>
         
         <form action="{{ route('store.about')}}" method="POST">
@@ -49,7 +49,7 @@
           <button type="submit" class="btn btn-primary">Submit</button>
 
         </form>
-        <a href="{{URL::to('/show.about')}}" class="btn btn-info" style="text-decoration: none;">About Show Page</a>
+       
       </div>
       
 

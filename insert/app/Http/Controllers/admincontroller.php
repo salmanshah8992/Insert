@@ -38,4 +38,8 @@ class admincontroller extends Controller
         $data->save();
         return redirect()->back()->with('success', 'Data inserted  successfully!');
     }
+    public function adminshow(){
+        $admin = Admin::orderBy('id', 'DESC')->get();
+        return view('adminshow', compact('admin'));
+    }
 }
